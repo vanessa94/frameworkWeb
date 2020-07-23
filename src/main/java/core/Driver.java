@@ -15,8 +15,8 @@ public class Driver {
 
 	public static void abreNavegador(String url) {
 		System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
-		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		driver = new ChromeDriver();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		driver.manage().window().maximize();
 		driver.get(url);
 	}
